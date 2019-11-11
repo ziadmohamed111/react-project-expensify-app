@@ -157,12 +157,6 @@ test( "should updater data from database and store ", ( done ) => {
 
     const store = createMockStore( {} )
     const id = expenses[0].id
-    const expenseData = {
-        description: "Gum",
-        note: "",
-        amount: 195,
-        createdAt: 0
-    } 
     const updates = {
         note: "this is note"
     }
@@ -179,10 +173,7 @@ test( "should updater data from database and store ", ( done ) => {
         return database.ref( `expenses/${id}` )
             .once( "value" )
             .then( ( snapshot ) => {
-                expect( snapshot.val() ).toEqual({
-                    ...expenseData,
-                    ...updates
-                })
+                expect( snapshot.val().note ).toBe("this is note")
                 done()
             } )
     } )

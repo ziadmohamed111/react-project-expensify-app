@@ -1,0 +1,34 @@
+.button-big{
+    border: none;
+    color : #fff;
+    padding: $s-size;
+    background-color: $blue;
+    font-size: $l-font;
+    display: inline-block;
+    line-height: 1;
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 200ms;
+    &:hover,
+    &:active {
+        background-color: darken($blue,3);
+    }
+}
+
+.button-sec {
+    @extend .button-big ;
+    background-color: #888888;
+}
+
+.button-inline{
+    border: none;
+    color : #fff;
+    background: transparent;
+    font-size: $l-font;
+    display: inline-block;
+    line-height: 1;
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+}

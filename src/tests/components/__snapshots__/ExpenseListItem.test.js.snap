@@ -1,21 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`sholud render Expense list item with one expense 1`] = `
-<div>
-  <[object Object]
-    to="/edit/2"
-  >
-    <h3>
+<[object Object]
+  className="list-item"
+  to="/edit/2"
+>
+  <div>
+    <h3
+      className="list-item_title"
+    >
        
       Rent
        
     </h3>
-  </[object Object]>
-  <p>
+    <span
+      className="list-item_sub-title"
+    >
+      Dec 28th, 1969
+    </span>
+  </div>
+  <h3
+    className="list-item_data"
+  >
     $1,000.00
-    -
-    Dec 28th, 1969
-     
-  </p>
-</div>
+  </h3>
+</[object Object]>
 `;

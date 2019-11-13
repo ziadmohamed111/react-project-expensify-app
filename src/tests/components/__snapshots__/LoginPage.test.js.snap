@@ -1,9 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render LoginPage correctly 1`] = `
-<div>
-  <button>
-    Login
-  </button>
+<div
+  className="box-layout"
+>
+  <div
+    className="box-layout__login-box"
+  >
+    <h1>
+      Expensify
+    </h1>
+    <p>
+      It's time to get your expenses under control.
+    </p>
+    <button
+      className="button-big"
+    >
+      Login With Google
+    </button>
+  </div>
 </div>
 `;

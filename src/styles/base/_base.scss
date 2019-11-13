@@ -2,9 +2,17 @@ html {
     font-size: 62.5% ; // we now making the font size = 10px so when we work with rem it becomes easier
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: helvetica , arial , sans-serif;
     font-size: 1.6rem;
+    color: #333;
+    line-height: 1.6;
 }
 
 .is-active{

@@ -5,11 +5,11 @@ import { Provider } from 'react-redux'
 import { startSetExpenses } from "./actions/expenses"
 import { login , logout } from "./actions/auth"
 import configureStore from "./store/configureStore"
+import Loading from "./components/Loading"
 import "./styles/style.scss"
 import "normalize.css/normalize.css"
 import 'react-dates/lib/css/_datepicker.css';
 import { firebase } from "./firebase/firebase";
-
 const store = configureStore();
 let hasRenderd = false
 const jsx = (
@@ -24,7 +24,7 @@ const renderApp = () => {
     }
 }
 
-ReactDOM.render( <p>loading...</p>, document.getElementById( 'app' ) );
+ReactDOM.render( <Loading/>, document.getElementById( 'app' ) );
 
 
 
